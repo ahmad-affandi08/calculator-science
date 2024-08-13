@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>TUGAS KELOMPOK 1 KALKULATOR</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAvy5gAAAAAADMAKwAyy5gAM8uYAF/LmwAyzJkAM8yZADUALQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERERERERERERAAAAARERERABEREAEREREBISEhAREREQEREREBERERASEhIQEREREBERERAREREQEhISEBERERAREREQEREREBgiIhAREREQEiIiEBERERABEREAEREREWc0UAERERERERERERERERERERERERH//wAA//8AAPAfAADnzwAA6q8AAO/vAADqrwAA7+8AAOqvAADv7wAA6C8AAOgvAADnzwAA8B8AAP//AAD//wAA" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+      <fieldset id="container">
+          <h1>MyCalculator.</h1>
+          <div class="container-rigt">
+            <form name="calculator">
+            <input id="display" type="text" name="display" readonly>
+            <input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+            <input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
+            <input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
+            <input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
+            <input class="button mathButtons" type="button" value="sqrt" onclick="handleFunction('sqrt')">
+            <input class="button mathButtons" type="button" value="sin" onclick="handleFunction('sin')">
+            <input class="button mathButtons" type="button" value="cos" onclick="handleFunction('cos')">
+            <br>
+            <input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
+            <input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
+            <input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
+            <input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
+            <input class="button mathButtons" type="button" value=")" onclick="calculator.display.value += ')'">
+            <input class="button mathButtons" type="button" value="log" onclick="handleFunction('log')">
+            <input class="button mathButtons" type="button" value="tan" onclick="handleFunction('tan')">
+            <br>
+            <input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
+            <input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
+            <input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
+            <input class="button mathButtons" type="button" value="*" onclick="calculator.display.value += ' * '">
+            <input class="button mathButtons" type="button" value="(" onclick="calculator.display.value += '('">
+            <input class="button mathButtons" type="button" value="x^2" onclick="calculator.display.value += '**2'">
+            <input class="button mathButtons" type="button" value="x^3" onclick="calculator.display.value += '**3'">
+            <br>
+            <input class="button digits" type="button" value="." onclick="calculator.display.value += '.'">
+            <input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
+            <input class="button digits"  id="clearButton" type="button" value="C" onclick="calculator.display.value = ''">
+            <input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
+            <input class="button mathButtons" type="button" value="=" onclick="handleEquals()">
+            <input class="button mathButtons" type="button" value="%" onclick="calculator.display.value += ' / 100'">
+            <input class="button mathButtons" type="button" value="pi" onclick="calculator.display.value += Math.PI">
+            <br>
+            <input class="button-row" type="button" value="Backspace" onclick="handleBackspace()">
+          </div>
+          <footer>
+            <div class="footer-content">
+              &copy; Copyright 2024. All Reserved.
+          </footer>
+        </fieldset>
+        
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
